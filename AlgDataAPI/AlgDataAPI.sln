@@ -5,7 +5,9 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms.API", "Algorithms.API\Algorithms.API.csproj", "{AA3C84F1-6949-4C01-B860-7CD53D549041}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructure.API", "DataStructure.API\DataStructure.API.csproj", "{10E120EF-B517-41C8-A681-B966212732C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructure.API", "DataStructure.API\DataStructure.API.csproj", "{10E120EF-B517-41C8-A681-B966212732C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgDataGateway.API", "AlgDataGateway.API\AlgDataGateway.API\AlgDataGateway.API.csproj", "{C9A3BAF5-C78C-409A-A867-57539CFC05C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{10E120EF-B517-41C8-A681-B966212732C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10E120EF-B517-41C8-A681-B966212732C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10E120EF-B517-41C8-A681-B966212732C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9A3BAF5-C78C-409A-A867-57539CFC05C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9A3BAF5-C78C-409A-A867-57539CFC05C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9A3BAF5-C78C-409A-A867-57539CFC05C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9A3BAF5-C78C-409A-A867-57539CFC05C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
