@@ -1,0 +1,36 @@
+version: '3.4'
+
+services:
+  algdatagateway.api:
+    image: ${DOCKER_REGISTRY-}algdatagatewayapi
+    build:
+      context: .
+      dockerfile: AlgDataGateway.API\AlgDataGateway.API\Dockerfile
+
+  algorithms.api:
+    image: ${DOCKER_REGISTRY-}algorithmsapi
+    ports:
+    - 4001:4001
+    - 5001:5001
+    expose:
+    - 5001
+    build:
+      context: .
+      dockerfile: Algorithms.API\Dockerfile
+
+
+  datastructure.api:
+    image: ${DOCKER_REGISTRY-}datastructureapi
+    build:
+      context: .
+      dockerfile: DataStructure.API\Dockerfile
+
+  mongo:
+    image: mongo
+    restart: always
+    container_name: algdataapidb
+    ports:
+     - 27017:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongo
+      - MONGO_INITDB_ROOT_PASSWORD=mongo

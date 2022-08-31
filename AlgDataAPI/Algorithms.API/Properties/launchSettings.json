@@ -26,6 +26,18 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "publishAllPorts": true,
+      "useSSL": true
+      //"environmentVariables": {
+      //  "ASPNETCORE_URLS": "https://+:500;http://+:100",
+      //  "ASPNETCORE_HTTPS_PORT": "44444"
+      //},
+      //"httpPort": 51111,
+      //"applicationUrl": "https://localhost:5001;http://localhost:4001"
     }
-  }
 }
