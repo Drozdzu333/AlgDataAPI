@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+  algdatagateway.api:
+    image: ${DOCKER_REGISTRY-}algdatagatewayapi
+    build:
+      context: .
+      dockerfile: AlgDataGateway.API/AlgDataGateway.API/Dockerfile
+    ports:
+    - 5003:443
+
+  datastructure.api:
+    image: ${DOCKER_REGISTRY-}datastructureapi
+    build:
+      context: .
+      dockerfile: DataStructure.API/Dockerfile
+    ports:
+    - 5002:80
+
+  algorithms.api:
+    image: ${DOCKER_REGISTRY-}algorithmsapi
+    build:
+      context: .
+      dockerfile: Algorithms.API/Dockerfile
+    ports:
+    - 5001:80
