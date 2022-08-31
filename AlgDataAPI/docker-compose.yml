@@ -24,3 +24,15 @@ services:
       dockerfile: Algorithms.API/Dockerfile
     ports:
     - 5001:80
+
+  mongo:
+    image: mongo
+    restart: always
+    container_name: algdataapidb
+    ports:
+     - 28018:27017
+    volumes:
+    - './MongoData:/data/db'
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongo
+      - MONGO_INITDB_ROOT_PASSWORD=mongo
