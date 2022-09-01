@@ -13,6 +13,7 @@ builder.Services.AddScoped<MergeSort>();
 builder.Services.AddScoped<QuickSort>();
 builder.Services.AddScoped<SelectSort>();
 builder.Services.AddScoped<TreeSort>();
+builder.Services.AddScoped<TimeCounter>();
 
 var app = builder.Build();
 
