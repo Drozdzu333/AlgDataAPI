@@ -3,7 +3,7 @@
     public class InsertSort : BaseSortService
     {
         public InsertSort(TimeCounter timeCounter): base(timeCounter) { }
-        override internal protected async Task EnforceSort(List<int> insertList)
+        override internal protected async Task EnforceSortAsync(List<int> insertList)
         {
 
             int i, j;

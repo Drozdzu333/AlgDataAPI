@@ -3,7 +3,7 @@
     public class SelectSort : BaseSortService
     {
         public SelectSort(TimeCounter time) : base(time) { }
-        override internal protected async Task EnforceSort(List<int> insertList)
+        override internal protected async Task EnforceSortAsync(List<int> insertList)
         {
             int i, j, currentMin, indexOfMin;
             for (i = 0; i < _resultList.Count - 1; i++)

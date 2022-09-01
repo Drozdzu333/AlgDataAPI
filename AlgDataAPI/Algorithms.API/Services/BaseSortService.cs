@@ -16,14 +16,14 @@
             _timeCounter.StartCounter();
             _countOfComparisons = 0;
             _resultList = insertList;
-            await EnforceSort(insertList);
+            await EnforceSortAsync(insertList);
             return new SortResultDTO() {
             SortedValues = _resultList,
                 TimeOfCalculation = _timeCounter.StopCounter(),
                 CountOfComparisons = _countOfComparisons
             };
         }
-        internal protected virtual async Task EnforceSort(List<int> value) { }
+        internal protected virtual async Task EnforceSortAsync(List<int> value) { }
         internal protected void Swap(int index1, int index2)
         {
             int valueHolder = _resultList[index2];
