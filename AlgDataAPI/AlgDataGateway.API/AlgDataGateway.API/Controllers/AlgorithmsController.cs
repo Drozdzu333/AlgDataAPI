@@ -36,6 +36,7 @@ namespace AlgDataGateway.API.Controllers
         [Route("TreeSort/")]
         public async Task<ActionResult<SortResultDTO>> TreeSort([FromBody] List<int> value)
             => await Connect(value);
+
         private async Task<ActionResult<SortResultDTO>> Connect(List<int> value)
         {
             var queryString = HttpContext.Request.Path.Value.Substring(1);

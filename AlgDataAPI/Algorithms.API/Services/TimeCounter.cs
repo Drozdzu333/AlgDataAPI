@@ -5,10 +5,10 @@ namespace Algorithms.API.Services
     {
         private Stopwatch _stopwatch { get; set; }
         public void StartCounter()=> _stopwatch = Stopwatch.StartNew();
-        public float StopCounter()
+        public double StopCounter()
         {
+            return _stopwatch.Elapsed.TotalMilliseconds;
             _stopwatch.Stop();
-            return _stopwatch.ElapsedMilliseconds;
         }
     }
 }
